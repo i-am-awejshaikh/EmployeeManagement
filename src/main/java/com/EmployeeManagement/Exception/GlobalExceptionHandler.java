@@ -42,7 +42,7 @@ public class GlobalExceptionHandler {
 	(EmployeeNotFoundException employeeNotFoundException)
 	{
 		empResponse <Object> EmpResponse=new empResponse<>();
-		EmpResponse.setData(employeeNotFoundException.getMessage());//String also Object that why we use Object 
+		EmpResponse.setData(employeeNotFoundException.getMessage());//String also Object thats why we use Object 
 		EmpResponse.setMessage("Employee Not Found");
 		EmpResponse.setSuccess(false);
 	return ResponseEntity.status(HttpStatus.NOT_FOUND).body(EmpResponse);
