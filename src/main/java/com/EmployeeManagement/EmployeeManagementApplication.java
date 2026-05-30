@@ -14,6 +14,8 @@ public class EmployeeManagementApplication {
 		SpringApplication.run(EmployeeManagementApplication.class, args);
 		logger.info("Alhamdulillah Rest Apis Machine Started");
 		logger.info("All Good");
+		logger.error("Checking ");
+		logger.warn("warning ");
 	}
 
 }
